@@ -23,9 +23,6 @@ if (dia<7) {
         case 7:
             console.log ('Domingo')
             break;
-        case (8 > dia):
-            console.log('El número ingresado es mayor a 7, ingrese un número entre el 1 y el 7')
-            break;
         default:
             console.log ('El número o caracter ingresado no es valido, pruebe con un numero entre el 1 y el 7')
             break;
