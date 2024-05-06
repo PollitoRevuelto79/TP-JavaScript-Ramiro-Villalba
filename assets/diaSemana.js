@@ -1,6 +1,6 @@
 let dia = parseInt(prompt('Ingrese un numero entre el 1 y el 7'));
 
-if (dia<7) {
+if (dia<=7) {
     switch (dia) {
         case 1:
             console.log('Lunes')
@@ -28,5 +28,9 @@ if (dia<7) {
             break;
     }
 }else {
+    if (isNaN(dia)){
+        console.log('Por favor, ingrese un valor numerico.')
+    } else {
     console.log('El número ingresado es mayor a 7, ingrese un número entre el 1 y el 7')
+    }
 }
