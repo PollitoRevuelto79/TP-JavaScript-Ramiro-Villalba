@@ -1,7 +1,7 @@
 let Edad = parseInt(prompt('Ingrese un número del 0 al 100'));
 console.log (Edad);
 
-if (Edad != Number && Edad>100) {
+if (isNaN(Edad) || Edad>100) {
         console.log('Por favor, ingrese un valor adecuado. Ingrese un número del 1 al 100')}
     else if (Edad === 0) { 
         console.log ('Es un recien nacido.')
