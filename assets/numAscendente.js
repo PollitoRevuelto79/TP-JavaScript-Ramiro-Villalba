@@ -1,14 +1,28 @@
-let numbUno = parseInt(prompt('Ingresa un primer número.'));
-let numbDos = parseInt(prompt('Ingresa un segundo número.'));
-let numbTres = parseInt(prompt('Ingresa un tercer número.'));
+let num1 = parseInt(prompt('Ingrese un primer número'));
+let num2 = parseInt(prompt('Ingrese un segundo número'));
+let num3 = parseInt(prompt('Ingrese un tercer número'));
 
-if (numbUno>numbDos && numbUno>numbTres) {
-    if (numbDos>numbTres)
-        console.log(numbUno,numbDos,numbTres)
-} else if (numbDos>numbUno && numbDos>numbTres) {
-    if (numbUno>numbTres)
-        console.log(numbDos,numbUno,numbTres)
-} else if (numbTres>numbUno && numbTres>numbDos) {
-    if (numbUno>numbDos)
-        console.log(numbTres,numbUno,numbDos)
+if (num1 === num2) {
+    if (num1 === num3)
+    console.log ('Los tres numeros son iguales.')
+} else {
+    if (num1 <= num2 && num1 <= num3) {
+        if (num2 <= num3) {
+            console.log(num1, num2, num3);
+        } else {
+            console.log(num1, num3, num2);
+        }
+    } else if (num2 <= num1 && num2 <= num3) {
+        if (num1 <= num3) {
+            console.log(num2, num1, num3);
+        } else {
+            console.log(num2, num3, num1);
+        }
+    } else {
+        if (num1 <= num2) {
+            console.log(num3, num1, num2);
+        } else {
+            console.log(num3, num2, num1);
+        }
+    }
 }
